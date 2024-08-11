@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/fondo1"
+        android:scaleType="centerCrop"
+        tools:ignore="ExtraText" />
+
+    <!-- Fondo con desvanecimiento -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0C0C0"
+        android:alpha="0.77"/>
+
+    <EditText
+        android:id="@+id/editTextVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Volumen (litros)"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextVolume"
+        android:hint="Mes"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMonth"
+        android:hint="Precio"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@id/editTextPrice" />
+</RelativeLayout>
+
